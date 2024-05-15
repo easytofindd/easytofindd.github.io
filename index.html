@@ -137,6 +137,29 @@
 				<li class="category-item"><a href="surah/112.html">112</a></li>
 				<li class="category-item"><a href="surah/113.html">113</a></li>
 				<li class="category-item"><a href="surah/114.html">114</a></li>
+				<div>
+					<button class="find">Find</button>
+					<br>
+					<input class="ayah" size="4" />
+				</div>
 			</ul>
+      <script>
+        const btn = document.querySelector(".find");
+        const ayah = document.querySelector(".ayah");
+
+        btn.addEventListener("click", getAyah);
+
+        function getAyah() {
+          window.open("https://quranx.com/Tafsir/Abbas/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Asrar/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Jalal/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Kashani/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Kathir/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Maududi/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Qushairi/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Tustari/" + ayah.value);
+          window.open("https://quranx.com/Tafsir/Wahidi/" + ayah.value);
+        }
+      </script>
    </body>
 </html>
